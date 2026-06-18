@@ -6,6 +6,13 @@ public class ProductoDigital implements Producto{
     private double tamaño;
     private String formato;
 
+    public ProductoDigital(String nombre, double precio, double tamaño, String formato) {
+    this.nombre = nombre;
+    this.precio = precio;
+    this.tamaño = tamaño;
+    this.formato = formato;
+    }
+
     @Override
     public void mostrarDetalles(){
         System.out.println("[Digital] - " + getNombre() + ", Precio: $" + getPrecio() + ", tamaño: " + tamaño + "MB, Formato: " + formato);
